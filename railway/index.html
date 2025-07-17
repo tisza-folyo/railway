@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Railways</title>
+</head>
+
+<body>
+    <div id="frame">
+        <div id="name">
+        </div>
+        <input id="playerName" type="text">
+        <div id="panel">
+            <div id="difficulties">
+                <p id="diffTitle">ÁLLÍTSD BE A NEHÉZSÉGET!</p>
+                <div class="diffType">
+                    <div class="dif">
+                        <button class="buttonType1" id="easy">5 X 5</button>
+                        <p>KÖNNYŰ</p>
+                    </div>
+                    <div class="dif">
+                        <button class="buttonType1" id="hard">7 X 7</button>
+                        <P>NEHÉZ</P>
+                    </div>
+                </div>
+            </div>
+            <div id="actions">
+                <button class="buttonType1" id="descript">LEÍRÁS</button>
+                <button class="buttonType2" id="start">JÁTÉK INDÍTÁSA</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="rail">
+
+    </div>
+    <dialog class="description">
+        <h1>A királyság vasúthálózata</h1>
+        <p>
+            Nekeresdországban Nevenincs király szeretne egy körvasutat építeni, amely bejárja a birodalmának minden
+            szegletét. A feladat megvalósítása Furfangra, az udvari tanácsosra vár, akinek a munkáját nehezíti a
+            királyság változatos tája. Segítsünk Furfangnak megtervezni a királyság vasúthálózatához tartozó térképet!
+            A játék különböző méretű négyzetrácsos hálón játszódhat, ahol a célunk az, hogy egy összefüggő
+            körvasútvonalat alkossunk úgy, hogy minden olyan helyre eljusson a vonat, ahova lehetséges.
+        </p>
+        <h2>A térképen több különböző típusú mező található, melyek a játék kezdetén látszódnak a térképen:</h2>
+    <div class="fieldContainer">
+        <div class="dialogField">
+            <img src="pics/tiles/empty.png" alt="Üres mező">
+            <h3>Üres mező</h3>
+            <p>Ezen a cellán a vasútvonal a belépési irányon kívül maradék három irányba tud haladni.</p>
+        </div>
+        <div class="dialogField">
+            <img src="pics/tiles/bridge.png" alt="Híd mező">
+            <h3>Híd mező</h3>
+            <p>Ezen a mezőn a vasútvonalat csak a híd által megadott egyenes irányban lehet megépíteni.</p>
+        </div>
+        <div class="dialogField">
+            <img src="pics/tiles/mountain.png" alt="Hegy mező">
+            <h3>Hegy mező</h3>
+            <p>Ezeken a mezőkön a sziklák a cellának két szomszédos kijáratát lezárják, így csak 90°-ban elfordulva lehet továbbhaladni.</p>
+        </div>
+        <div class="dialogField">
+            <img src="pics/tiles/oasis.png" alt="Oázis mező">
+            <h3>Oázis mező</h3>
+            <p>Erre a cellára nem lehet vasutat építeni.</p>
+        </div>
+    </div>
+    <p>
+        Mivel szeretnénk a vasúthálózat alapanyagán spórolni, így a vasúthálózat sehol nem keresztezheti önmagát, sehol nem ágazhat el, és nem haladhat át többször egy cellán!
+    </p>
+    <p>A játék időre megy, ami ha letelik akkor vége van a körnek!</p>
+    <p>Bal egérgombbal helyezheted le az elemeket amit további kattintásokkal forgathatsz!</p>
+    <p>A shift lenyomásával és a bal egérgomb kattintásával válthatsz a sín típusok között (egyenes,kanyarulat)!</p>
+    <p>A ctrl lenyomásával és a bal egérgomb kattintásával felveheted a már lehelyezett sínt!</p>
+    </dialog>
+    <dialog class="topListDialog">
+        <h3>Top Lista</h3>
+            <ol class="times">
+
+            </ol>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+
+</html>

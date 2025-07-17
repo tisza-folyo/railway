@@ -1,0 +1,309 @@
+body{
+    background-color: #F8FAF0;
+    
+}
+
+#frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#name{
+    background-image: url("./pics/screens/title.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 60%;
+    height: 10em;
+    margin-bottom: 1em;
+}
+
+#playerName{
+    width: 58%;
+    height: 20%;
+    border-radius: 0.5em;
+    border: 4px solid rgb(217, 192, 136);
+    font-size: 30px;
+    padding: 1%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 1em;
+}
+
+#panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    font-weight: bold;
+
+}
+
+#difficulties{
+    width: 60%;
+    border-radius: 0.5em;
+    border: 4px solid rgb(180, 191, 163);
+    width: 100%;
+    background-color: white;
+    color: grey;
+    height: 10em;
+}
+td{
+    padding: 0;
+}
+
+#actions{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    float: right;
+    height: 10em;
+}
+#diffTitle{
+    text-align: center;
+}
+.diffType{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.dif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+button{
+    width: 90%;
+    border-radius: 0.5em;
+    border: 4px solid rgb(217, 192, 136);
+}
+
+.buttonType1{
+    width: 80%;
+    border-radius: 0.5em;
+    border: 4px solid rgb(180, 191, 163);
+    height: 4em;
+    font-weight: bold;
+    color: rgb(80, 81, 104);
+    background-color: white;
+    font-size: 15px;
+}
+
+.buttonType2{
+    width: 80%;
+    border-radius: 0.5em;
+    border: 4px solid rgb(180, 191, 163);
+    height: 5em;
+    font-weight: bold;
+    background-color: rgb(164, 165, 172);
+    color: white;
+    margin-top: 2em;
+}
+
+.buttonType1:hover{
+    background-color: rgb(164, 165, 172);
+}
+.buttonType2:hover{
+    color: yellow;
+}
+
+#rail{
+    display: flex;
+    background-image: url("./pics/screens/rail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 10em;
+    margin-top: 2em;
+}
+.description{
+    border-radius: 0.5em;
+    border: 4px solid rgb(217, 192, 136);
+    width: 70%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.fieldContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dialogField {
+    width: 22%;
+    text-align: center;
+}
+
+.dialogField img {
+    width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dialogField h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+.dialogField p {
+    font-size: 0.9em;
+}
+.selectedDif{
+    background-color: rgb(164, 165, 172);
+}
+.deSelectedDif{
+    background-color: white;
+}
+
+.topListDialog{
+    border-radius: 0.5em;
+    border: 4px solid rgb(217, 192, 136);
+    width: 300px;
+    padding: 20px;
+    text-align: center; 
+}
+ol{
+    list-style-position: inside;
+    padding: 0;
+}
+/*DOM*/
+
+.gameFrame{
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.side{
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    margin-top: 5%;
+}
+.imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-height: 5em;
+}
+.imG{
+    width: 100%;
+    margin-bottom: 2em;
+}
+.imG:hover{
+    width: 111%;
+    margin-bottom: 1.6em;
+}
+.generalThings{
+    border : 4px solid rgb(217, 192, 136);
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;  
+    max-width: 22em; 
+    background-color: white;
+}
+.divTable{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    margin-top: 2%;
+    border: 10px solid rgb(144, 118, 81);
+    border-radius: 1em;
+    background-color:  #F8FAF0;
+    width: 72%;
+}
+.desNameTitle{
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+.desName{
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0;
+}
+hr{
+    width: 90%;
+}
+.timeTitle{
+    font-size: 2vw;
+    margin: 0;
+}
+.time{
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+.fieldImg{
+    display: block;
+    width: 100%;
+}
+
+.railPic{
+    position: absolute;
+    z-index: -10;
+    top: 70%;
+}
+
+.actual{
+    color: red;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    #panel{
+        width: 90%;
+    }
+    #name{
+        width: 90%;
+        margin-bottom: 0;
+    }
+    #playerName{
+        width: 83%;
+    }
+    #rail{
+        margin-top: 0;
+    }
+    .gameFrame{
+        flex-direction: column;
+    }
+    .side{
+        width: 100%;
+        align-items: center;
+    }
+    .divTable{
+        width: 100%;
+    }
+}
